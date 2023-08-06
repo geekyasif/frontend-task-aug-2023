@@ -1,32 +1,69 @@
+/* Regular weight font */
+@font-face {
+    font-family: 'Metropolis';
+    src: url('fonts/metropolis-regular.woff2') format('woff2'),
+        url('fonts/metropolis-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Italic weight font (if applicable) */
+@font-face {
+    font-family: 'Metropolis';
+    src: url('fonts/metropolis-italic.woff2') format('woff2'),
+        url('fonts/metropolis-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Bold weight font (if applicable) */
+@font-face {
+    font-family: 'Metropolis';
+    src: url('fonts/metropolis-bold.woff2') format('woff2'),
+        url('fonts/metropolis-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+
 body {
+    width: 100vw;
+    height: 100vh;
     font-family: 'Inter';
-    /* font-size: 22px; */
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
 #container {
-    width: 50%;
+    width: 340.73px;
     margin: auto;
 
 }
 
 
-
-
 /* heading section  */
 /* Your existing CSS code */
 
-#heading {
-    text-align: center;
-    color: #007F61;
-    font-weight: 500;
+header {
     position: relative;
     overflow: hidden;
+}
+
+#heading {
+    color: #007F61;
+    font-weight: 500;
+    width: 126px;
+    font-size: 18.06px;
+    line-height: 18.08px;
+    margin: auto;
 }
 
 #heading::before,
@@ -34,20 +71,16 @@ body {
     content: "";
     position: absolute;
     top: 50%;
-    width: 40%;
-    /* Adjust the width of the lines as needed */
-    height: 1px;
-    background-color: #C8C8C8;
+    width: 94px;
+    border: 0.9px solid #C8C8C8;
 }
 
 #heading::before {
     left: 0;
-    margin-left: -20px;
 }
 
 #heading::after {
     right: 0;
-    margin-right: -20px;
 }
 
 
@@ -57,12 +90,13 @@ body {
     padding: 20px 15px;
     margin: 10px 0px;
     border-radius: 4px;
+    height: 74.11px;
 }
 
 .selected-card {
     border: 0.9px solid #007F61;
     background-color: #F4FBF9;
-    /* height: 161.78px; */
+    height: 161.78px;
 }
 
 .first-row {
@@ -90,59 +124,65 @@ input[type="radio"]:checked {
 
 
 .first-row-mid-col {
-    width: 75%;
+    width: 70%;
 }
 
 .first-row-mil-col-top {
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 .pair {
     font-size: 14.46px;
-    line-height: 17.5px;
+    line-height: 14.46px;
     color: #000000;
+    height: 18px;
+    font-weight: 400;
+    font-family: 'Metropolis', sans-serif;
 }
 
 .first-row-mid-col-bottom-row {
     display: flex;
     justify-content: space-between;
-    margin: 4px 0px;
 }
 
 
 .first-row-mid-col-bottom-row p {
     font-size: 14.46px;
-    font-weight: 600;
-    line-height: 17.5px;
+    font-weight: 500;
+    line-height: 14.46px;
+    font-family: 'Metropolis', sans-serif;
 }
 
 .first-row-last-col {
     text-align: end;
-    width: 25%;
+    width: 30%;
 }
 
 .most-popular {
     color: #007F61;
     font-size: 12.65px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 15.31px;
+    font-family: 'Metropolis', sans-serif;
 }
 
 .off-text {
     font-weight: 500;
-    font-size: 15.65px;
-    line-height: 12.65px;
+    font-size: 14.46px;
+    line-height: 14.46px;
+    font-family: 'Metropolis', sans-serif;
 }
 
 .off-text-selected {
     font-weight: 600;
     font-size: 12.65px;
-    line-height: 12.65px;
-    margin-top: 5px;
+    line-height: 15.31px;
+    font-family: 'Metropolis', sans-serif;
 }
 
 table {
     padding-left: 13px;
+    margin-top: 5px;
 }
 
 .tb-heading {
@@ -157,25 +197,25 @@ table {
     font-weight: 400;
     line-height: 10.94px;
     color: #000000;
-    padding-right: 7px;
 }
 
 del {
     color: #9F9F9F;
-    font-size: 12.65px;
+    font-size: 9.94px;
+    line-height: 12.03px;
+    font-weight: 400;
 }
 
 
 select {
-    border-radius: 1px;
-    border-color: #D9D9D9;
     background-color: #FFFFFF;
     font-size: 10.85px;
     line-height: 13.13px;
     font-weight: 400;
-    width: 90px;
-    height: 30px;
+    width: 72.3px;
+    height: 25.31px;
     border-radius: 2px;
+    border: 0.9px solid #D9D9D9;
     margin: 2px 2px;
 }
 
@@ -200,25 +240,25 @@ select {
 .total {
     font-size: 14px;
     line-height: 16.94px;
+    font-weight: 400;
 }
 
 .total-price {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 
 /* add to card button  */
 .cart-btn {
-    width: 100%;
-    padding: 20px;
+    width: 341px;
+    height: 48px;
     background-color: #007F61;
-    color: white;
-    border-radius: 5px;
+    border-radius: 3px;
     font-weight: 600;
     font-size: 16px;
     line-height: 19.36px;
     border-color: transparent;
-
+    color: #FFFFFF;
 }
 
 
@@ -253,12 +293,12 @@ a {
 /* Media query for extra small devices (phones) */
 @media (max-width: 575.98px) {
     #container {
-        width: 100%;
-        margin: auto;
-        padding: 20px;
+        /* width: 100%; */
+        /* margin: auto; */
+        /* padding: 20px; */
     }
 
-    .pair {
+    /* .pair {
         font-size: 12.46px;
         line-height: 15.5px;
         color: #000000;
@@ -329,18 +369,20 @@ a {
         font-weight: 300;
     }
 
+    */
+
     select {
         color: black;
     }
 
     #heading::before {
-        left: 0;
-        margin-left: -40px;
+        /* left: 0; */
+        /* margin-left: -40px; */
     }
 
     #heading::after {
-        right: 0;
-        margin-right: -40px;
+        /* right: 0; */
+        /* margin-right: -40px; */
     }
 
 }
@@ -350,13 +392,13 @@ a {
 
     /* Custom styles for small devices */
     #container {
-        width: 100%;
-        margin: auto;
-        padding: 10px;
+        /* width: 100%; */
+        /* margin: auto;
+        padding: 10px; */
     }
 
 
-    #heading::before {
+    /* #heading::before {
         left: 0;
         margin-left: -20px;
     }
@@ -364,7 +406,7 @@ a {
     #heading::after {
         right: 0;
         margin-right: -20px;
-    }
+    } */
 
 
 }
@@ -374,11 +416,12 @@ a {
 
     /* Custom styles for medium devices */
     #container {
-        width: 100%;
-        margin: auto;
-        padding: 10px;
+        /* width: 100%; */
+        /* margin: auto;
+        padding: 10px; */
     }
 
+    /* 
     #heading::before {
         left: 0;
         margin-left: -20px;
@@ -387,7 +430,7 @@ a {
     #heading::after {
         right: 0;
         margin-right: -20px;
-    }
+    } */
 
 
 
