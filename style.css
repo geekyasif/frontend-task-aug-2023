@@ -3,7 +3,6 @@
     font-family: 'Metropolis';
     src: url('fonts/metropolis-regular.woff2') format('woff2'),
         url('fonts/metropolis-regular.woff') format('woff');
-    /* font-weight: normal; */
     font-style: normal;
 }
 
@@ -255,11 +254,13 @@ select {
 /* copyright  section  */
 
 .copyright {
-    text-align: end;
     margin: 10px 0px;
     font-weight: 300;
     font-size: 7.33px;
     line-height: 8.88px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
 .copyright em {
