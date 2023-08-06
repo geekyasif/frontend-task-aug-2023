@@ -17,9 +17,9 @@
 
 
         <!-- first card  -->
-        <article class="card">
+        <article class="card" id="first-card">
             <section class="first-row">
-                <input type="radio">
+                <input type="radio" id="first-radio" name="options" value="1">
                 <section class="first-row-mid-col">
                     <div class="first-row-mil-col-top">
                         <p class="pair">1 Pair</p>
@@ -32,13 +32,15 @@
                     <p class="off-text">50% OFF</p>
                 </section>
             </section>
+
+            <section id="first-table-container"></section>
         </article>
 
 
         <!-- second card  -->
-        <article class="card selected-card">
+        <article class="card" id="second-card">
             <section class="first-row">
-                <input type="radio">
+                <input type="radio" id="second-radio" name="options" value="2">
                 <section class="first-row-mid-col">
                     <div class="first-row-mil-col-top">
                         <p class="pair">2 Pair</p>
@@ -54,71 +56,15 @@
                 </section>
             </section>
 
-            <section class="first-row">
-                <div class="first-row-mid-col">
-                    <div class="">
-                        <div class="">
-                            <table>
-                                <tr>
-                                    <th></th>
-                                    <th class="tb-heading">Size</th>
-                                    <th class="tb-heading">Colour</th>
-                                </tr>
-                                <tr>
-                                    <td class="count">#1</td>
-                                    <td>
-                                        <select name="" id="">
-                                            <option value="">S</option>
-                                            <option value="">M</option>
-                                            <option value="">L</option>
-                                            <option value="">XL</option>
-                                        </select>
-                                    </td>
-
-                                    <td>
-                                        <select name="" id="">
-                                            <option value="">Colour</option>
-                                            <option value="">Red</option>
-                                            <option value="">Black</option>
-                                            <option value="">Orange</option>
-                                        </select>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="count">#2</td>
-                                    <td>
-                                        <select name="" id="">
-                                            <option value="">S</option>
-                                            <option value="">M</option>
-                                            <option value="">L</option>
-                                            <option value="">XL</option>
-                                        </select>
-                                    </td>
-
-                                    <td>
-                                        <select name="" id="">
-                                            <option value="">Colour</option>
-                                            <option value="">Red</option>
-                                            <option value="">Black</option>
-                                            <option value="">Orange</option>
-                                        </select>
-                                    </td>
-                                </tr>
-
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="first-row-last-col">
-                </div>
-            </section>
+            <section id="second-table-container"></section>
         </article>
 
+
+
         <!-- third card  -->
-        <article class="card">
+        <article class="card " id="third-card">
             <div class="first-row">
-                <input type="radio">
+                <input type="radio" id="third-radio" name="options" value="3">
                 <div class="first-row-mid-col">
                     <div class="first-row-mil-col-top">
                         <p class="pair">3 Pair</p>
@@ -131,6 +77,8 @@
                     <p class="off-text">60% OFF</p>
                 </div>
             </div>
+
+            <section id="third-table-container"></section>
         </article>
 
 
@@ -163,6 +111,7 @@
     </main>
 
 
+    <script src="app.js"></script>
 </body>
 
 </html>
