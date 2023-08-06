@@ -170,6 +170,7 @@ table {
     font-size: 9.94px;
     line-height: 12.03px;
     font-weight: 400;
+    padding: 2px 0px;
 }
 
 .count {
@@ -204,6 +205,7 @@ select {
     background-position-x: 100%;
     background-position-y: 4px;
     padding-left: 7px;
+    margin: 3px;
 }
 
 /* total section  */

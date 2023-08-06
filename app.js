@@ -13,7 +13,7 @@ const options = `<section class="first-row">
         <div class="">
             <table>
                 <tr>
-                    <th></th>
+                    <th ></th>
                     <th class="tb-heading">Size</th>
                     <th class="tb-heading">Colour</th>
                 </tr>
